@@ -1,0 +1,9 @@
+A particular database is normalized to satisfy a particular level of normalization (either 1NF or 2NF or 3NF). One of the tables contains, among other fields,
+a column for the City and a column for the Zip Code. Assuming that there is a many-to-one mapping between the set of Zip Code(s) and City, we may conclude that the
+database is definitely NOT in xNF form. What is the integer x (1, 2, or 3)? Fill your answer in the text box below.
+
+THE ANSWER :  3 as it may be not in 3nf as it may be in 1nf that don't have any mulivauled attribute bec. the question assumes the presence on one to many relation 
+so this R in 1nf , coming to 2nf there's no assumption for that says that one of the attributes is a prime one (part of primary key or a primary key)
+so there's no partial dependency this takes us automatically that R in 2nf , coming to 3nf that deal with problem of Transitive dependency that may occur in our case 
+as both of our attributes are non-key attributes and have a mutual relation (one to many) so there's a Transitive dependency so the FINAL ANSWER is 3nf 
+
