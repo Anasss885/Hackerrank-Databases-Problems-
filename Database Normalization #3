@@ -1,0 +1,12 @@
+A database used by a college’s application stores the relationship between students and the courses they are enrolled in. 
+We have information for each STUDENT (such as name, date of birth, date of enrollment, student-id) and COURSE (course code, instructor, etc.). 
+In real life, a student takes several courses simultaneously while a subject is studied by several students. 
+We need to capture this many-to-many relationship in our database. From the above information,
+what is the minimum number of tables required to structure this database in accordance with the rules of 2NF normalization?
+
+
+THE ANSWER:the answe is ' 3 ' this type of Questions will have a several explanations from differnt perspectives so i highly recommend to read the many Explanations 
+in the Discussion part in hackerrank , my explanation is a little bit simple as we know according to DB Design rule about establishing a many to many relation 
+between 2 tables we must have a third table (i.e linkage table or intermediate table ) this way is not like establishing the relations one-to-one or one-to-many 
+by putting the primary key of parent table to be a foreign key in the child table so by this way i reached to that the minimum number of tables we need is 3 , you can get
+the same answer by another way , up to you 
