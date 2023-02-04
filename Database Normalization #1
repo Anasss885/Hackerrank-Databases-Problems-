@@ -1,0 +1,49 @@
+The following unnormalized table named PRODUCT is transformed to first normal form (1NF) by splitting it into two tables which have X and Y rows (such that X <Y)
+respectively. Both the tables have Z columns.
+
+*Product-ID*    *Colors*    *Price*
+1               Red,Green   15.0
+2               Blue        18.0
+3               Yellow,Pink 2.5
+What are the values of X, Y, Z? Enter these integers, each on a new line, in the text-box below. Do not leave any leading or trailing spaces.
+
+
+
+THE ANSWER:
+
+
+
+this question as a little bit tricky so let's dive ! , to make this table in 1nf as u learn we must formulate every attribute to be a single value in each column 
+so after doing the 1nf normalization it results:
+
+*Product-ID*    *Colors*    *Price*
+1               Red         15.0
+1               Green       15.0
+2               Blue        18.0
+3               Yellow      2.5
+3               Pink        2.5
+
+after this we can customize our normalization format with the question scenarion as it says we must divide it into 2 tables both of the have the same number of columns(z)
+logically it will be 2 columns as we have 3 attributes , one of the must be in both tables(*Product-ID*) well , the number of rows of one of them is less than 
+the other table rows (x<y) so our tables are
+
+
+*Product-ID*      *Price*
+1                    15.0
+2                    18.0
+3                    2.5
+
+x(number of rows of table 1 )= 3 and columns = 2
+
+and the second table will be 
+
+*Product-ID*    *Colors*    
+1               Red         
+1               Green     
+2               Blue       
+3               Yellow  
+3               Pink 
+y(number of rows of table 1 )= 5 and columns = 2
+
+so we almost fit the whole problem scenario , common number of columns(z) and the rows of one of the is less than the other(x<y)
+so x,z,y = 3,5,2
