@@ -1,0 +1,17 @@
+Consider the following relation and determinants.
+
+R(a, b,c,d)
+
+                   a,c -> b,d
+                   a,d -> b
+        Also, a,b is a primary key for the above relation.
+        
+        
+The above relation is in x NF form where x may take the following values {1,2,3,3.5} corresponding to {1NF, 2NF, 3NF and BCNF} respectively.
+What is the maximum possible value of x such that the above relation satisfies the *x*NF form?
+Your answer should only be restricted to one of these numbers:1/2/3/3.5 Do not leave any leading or trailing spaces.
+
+
+THE ANSWER:
+the ans is '3' as there's no multivalued , composite attributes ignore 1nf , and there's no Partial Dependency as the presence of prime att. with non prime one (AC) to 
+determines another attributes is can be considered candidate key so ignore 2nf , going to 3nf there's no transtive Dependency but with BCNF it won't work
