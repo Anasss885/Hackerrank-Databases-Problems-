@@ -1,0 +1,14 @@
+Consider the following two designs to store the data using clustered indexes in MS SQL Server:
+In the first design, the fill factor is 20% and the total number of free rows per page are A.
+
+In the second design, the fill factor is 40% and the total number of free rows per page are B.
+
+Which the followings describes the relation between A and B:
+1- A = 1.33B
+2- B = 1.33A
+3- A = 0.67B
+4- B = 0.67A
+
+the answer is : (1) , 
+since that num of rows in A = num of rows in B , so A=0.8x , B=0.6x 
+so x = A/0.8 = B/0.6 so A = (b/0.6) * 0.8 so A = 0.8/0.6 * B , A = 1.33B 
